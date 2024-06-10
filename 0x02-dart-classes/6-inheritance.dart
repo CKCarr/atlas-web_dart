@@ -26,7 +26,16 @@ class User extends Password {
   int id;
 
   /// Property: password of the user
-  late String? user_password;
+  late String? _user_password;
+
+  /// Getter for user_password
+  String? get user_password => _user_password;
+
+  /// Setter for user_password that also updates _password in the Password class
+  set user_password(String? password) {
+    _user_password = password;
+    this.password = password;
+  }
 
   /// Constructor: initializes the User
   User({
@@ -60,6 +69,6 @@ class User extends Password {
 
   // method toString to return a string representation of User
   String toString() {
-    return 'User(id: $id, name: $name, age: $age, height: $height, Password: ${isValid()})';
+    return 'User(id : $id, name: $name, age: $age, height: $height, Password: ${isValid()})';
   }
 }
