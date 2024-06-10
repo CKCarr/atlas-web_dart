@@ -1,0 +1,7 @@
+dartdoc:
+  # Specify the output directory
+  output: doc/api
+
+  # You can use the name from the pubspec.yaml file for clean paths
+  useBaseHref: false
+

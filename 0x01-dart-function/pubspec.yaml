@@ -1,0 +1,9 @@
+name: dart_function
+description: A simple Dart project
+version: 0.1.0
+
+environment:
+  sdk: '^3.4.0'
+
+dependencies:
+  # Add your project dependencies here
