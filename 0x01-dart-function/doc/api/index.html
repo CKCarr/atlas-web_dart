@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="dart_function API docs, for the Dart programming language.">
+  <title>dart_function - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li class="self-crumb">dart_function package</li>
+  </ol>
+  <div class="self-name">dart_function</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button" title="Toggle brightness">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        dark_mode
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        light_mode
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <h1 id="dart---function">Dart - Function</h1>
+<h2 id="project-overview">Project Overview</h2>
+<p>This project focuses on developing basic Dart functions. The goal is to implement a series of functions that perform various tasks, ranging from simple string manipulation to more complex algorithms like finding the longest unique substring and checking for palindromes.</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Understand Dart syntax and basic programming constructs.</li>
+<li>Learn to write functions in Dart.</li>
+<li>Utilize Dart collections like Lists and Maps.</li>
+<li>Apply loops and conditional statements in Dart.</li>
+<li>Implement recursive functions.</li>
+<li>Develop and test Dart code effectively.</li>
+</ul>
+<h2 id="tasks">Tasks</h2>
+<h3 id="0-hello-function">0. Hello Function</h3>
+<p>Write a Dart function <code>helloFunction</code> that accepts one argument <code>String</code> and prints "Hello <code>&lt;str&gt;</code> from dart".</p>
+<p><strong>Function prototype:</strong></p>
+<pre class="language-dart"><code class="language-dart">void helloFunction(String str);
+</code></pre>
+<h3 id="1-concatenate-strings">1. Concatenate Strings</h3>
+<p>Write a Dart function <code>concatStr</code> that accepts two arguments <code>str1</code> and <code>str2</code> and returns the concatenated string with a space in between.</p>
+<p>Function prototype:</p>
+<pre class="language-dart"><code class="language-dart">String concatStr(String str1, String str2);
+</code></pre>
+<h3 id="2-addsub">2. Add/Sub</h3>
+<p>Write three functions in Dart: <code>add</code>, <code>sub</code>, and <code>showFunc</code>.</p>
+<p>Function prototypes:</p>
+<pre class="language-dart"><code class="language-dart">
+int add(int a, int b);
+int sub(int a, int b);
+String showFunc(int a, int b);
+</code></pre>
+<h3 id="3-factorial">3. Factorial</h3>
+<p>Write a recursive function to compute the factorial of a positive integer <code>fact</code>.</p>
+<p>Function prototype:</p>
+<pre class="language-dart"><code class="language-dart">int fact(int f);
+</code></pre>
+<h3 id="4-outer-inner">4. Outer Inner</h3>
+<p>Write two functions: <code>outer</code> and <code>inner</code>. The outer function takes two arguments name and id and prints the output of the inner function.</p>
+<p>Function prototypes:</p>
+<pre class="language-dart"><code class="language-dart">void outer(String name, String id);
+String inner();
+</code></pre>
+<h3 id="5-calculate-area">5. Calculate Area</h3>
+<p>Create a function <code>calculateArea</code> that accepts two variables height and base and returns the area of the triangle.</p>
+<p>Function prototype:</p>
+<pre class="language-dart"><code class="language-dart">double calculateArea(double height, double base);
+</code></pre>
+<h3 id="6-convert-to-fahrenheit">6. Convert to Fahrenheit</h3>
+<p>Create a function <code>convertToF</code> that accepts a list of doubles representing a list of temperatures in Celsius, converts them to Fahrenheit, and returns them in a list.</p>
+<p>Function prototype:</p>
+<pre class="language-dart"><code class="language-dart">List&lt;double&gt; convertToF(List&lt;double&gt; temperaturesInC);
+</code></pre>
+<h3 id="7-basketball-shots">7. Basketball Shots</h3>
+<p>Given two maps representing the number of successful shots for each shot type in a basketball game between team A and team B, create a function <code>whoWins</code> that calculates the total number of points for each team and returns the winning team.</p>
+<p>Function prototype:</p>
+<pre class="language-dart"><code class="language-dart">int whoWins(Map&lt;String, int&gt; teamA, Map&lt;String, int&gt; teamB);
+</code></pre>
+<h3 id="8-longest-unique-substring">8. Longest Unique Substring</h3>
+<p>Write a function <code>longestUniqueSubstring</code> that accepts one argument String and returns the longest non-repeating substring.</p>
+<p>Function prototype:</p>
+<pre class="language-dart"><code class="language-dart">String longestUniqueSubstring(String str);
+</code></pre>
+<h3 id="9-palindrome">9. Palindrome</h3>
+<p>Write a function <code>isPalindrome</code> that accepts one argument String and returns true if the input string is a palindrome, otherwise returns false.</p>
+<p>Function prototype:</p>
+<pre class="language-dart"><code class="language-dart">bool isPalindrome(String s);
+</code></pre>
+<h3 id="10-longest-palindrome">10. Longest Palindrome</h3>
+<p>Write a function <code>longestPalindrome</code> that accepts one argument String and returns the longest palindrome substring.</p>
+<p>Function prototype:</p>
+<pre class="language-dart"><code class="language-dart">String longestPalindrome(String s);
+</code></pre>
+<h2 id="how-to-run-the-project">How to Run the Project</h2>
+<p>Ensure Dart SDK is installed:
+<a href="https://dart.dev/get-dart#:~:text=Get%20the%20Dart%20SDK%201%20System%20requirements%20Dart,the%20appropriate%20package%20manager%20for%20your%20development%20platform.">Follow the official Dart installation guide.</a></p>
+<p>Clone the repository:</p>
+<pre class="language-bash"><code class="language-bash">git clone &lt;https://github.com/your-username/atlas-web_dart.git&gt;
+cd atlas-web_dart/0x01-dart-function
+</code></pre>
+<p>Get dependencies:</p>
+<pre class="language-bash"><code class="language-bash">dart pub get
+</code></pre>
+<p>Run each main file to test the corresponding function:</p>
+<pre class="language-bash"><code class="language-bash">dart 0-main.dart
+dart 1-main.dart
+dart 2-main.dart
+# ... and so on
+</code></pre>
+<p>Generate documentation:
+<a href="https://dart.dev/tools/dart-doc">Learn about Dart Docs Here!</a></p>
+<pre class="language-bash"><code class="language-bash">dart doc .
+</code></pre>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="0-hellofunc">
+  <span class="name"><a href="0-hellofunc/0-hellofunc-library.html">0-hellofunc</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="1-concat_strings">
+  <span class="name"><a href="1-concat_strings/1-concat_strings-library.html">1-concat_strings</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="2-sumfunc">
+  <span class="name"><a href="2-sumfunc/2-sumfunc-library.html">2-sumfunc</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="3-factors">
+  <span class="name"><a href="3-factors/3-factors-library.html">3-factors</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="4-outer_inner">
+  <span class="name"><a href="4-outer_inner/4-outer_inner-library.html">4-outer_inner</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="5-calculate-area">
+  <span class="name"><a href="5-calculate-area/5-calculate-area-library.html">5-calculate-area</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="6-convert-to-fahrenheit">
+  <span class="name"><a href="6-convert-to-fahrenheit/6-convert-to-fahrenheit-library.html">6-convert-to-fahrenheit</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="7-basketball-shots">
+  <span class="name"><a href="7-basketball-shots/7-basketball-shots-library.html">7-basketball-shots</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="8-longest-unique-substring">
+  <span class="name"><a href="8-longest-unique-substring/8-longest-unique-substring-library.html">8-longest-unique-substring</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="9-palindrome">
+  <span class="name"><a href="9-palindrome/9-palindrome-library.html">9-palindrome</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="10-longest-palindrome">
+  <span class="name"><a href="10-longest-palindrome/10-longest-palindrome-library.html">10-longest-palindrome</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+        </dl>
+      </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li class="self-crumb">dart_function package</li>
+</ol>
+
+
+    <h5 class="hidden-xs"><span class="package-name">dart_function</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="0-hellofunc/0-hellofunc-library.html">0-hellofunc</a></li>
+      <li><a href="1-concat_strings/1-concat_strings-library.html">1-concat_strings</a></li>
+      <li><a href="2-sumfunc/2-sumfunc-library.html">2-sumfunc</a></li>
+      <li><a href="3-factors/3-factors-library.html">3-factors</a></li>
+      <li><a href="4-outer_inner/4-outer_inner-library.html">4-outer_inner</a></li>
+      <li><a href="5-calculate-area/5-calculate-area-library.html">5-calculate-area</a></li>
+      <li><a href="6-convert-to-fahrenheit/6-convert-to-fahrenheit-library.html">6-convert-to-fahrenheit</a></li>
+      <li><a href="7-basketball-shots/7-basketball-shots-library.html">7-basketball-shots</a></li>
+      <li><a href="8-longest-unique-substring/8-longest-unique-substring-library.html">8-longest-unique-substring</a></li>
+      <li><a href="9-palindrome/9-palindrome-library.html">9-palindrome</a></li>
+      <li><a href="10-longest-palindrome/10-longest-palindrome-library.html">10-longest-palindrome</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+
+</main>
+
+<footer>
+  <span class="no-break">
+    dart_function
+      0.1.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+
